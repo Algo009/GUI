@@ -1,0 +1,95 @@
+/* Main window specific styles */
+
+#headerBar {
+    background-color: #21252b;
+    border-bottom: 1px solid #2c313c;
+}
+
+#titleLabel {
+    color: #f8f8f2;
+}
+
+#subtitleLabel {
+    color: #bd93f9;
+}
+
+#feedbackLabel {
+    color: #50fa7b;
+    font-weight: 600;
+}
+
+#statusLabel {
+    color: #98a2b3;
+}
+
+#leftMenu {
+    background-color: #21242b;
+    border-right: 1px solid #2c313c;
+}
+
+#toggleMenuButton {
+    font-size: 16pt;
+    text-align: center;
+    padding: 6px;
+}
+
+#toggleMenuButton:hover {
+    background-color: #2a2f38;
+}
+
+#settingsButton {
+    margin-top: 12px;
+}
+
+#saveButton {
+    background-color: #50fa7b;
+    color: #1c1f25;
+    font-weight: 600;
+    text-align: center;
+}
+
+#saveButton:hover {
+    background-color: #3ae86a;
+}
+
+#saveButton:pressed {
+    background-color: #2ec15a;
+}
+
+#contentArea {
+    background-color: #2b3038;
+}
+
+#mainContent {
+    background-color: #1f2329;
+    border-top: 1px solid #2f343f;
+}
+
+#loadingIndicator {
+    color: #bd93f9;
+}
+
+#menuButton_home[selected="true"],
+#menuButton_widgets[selected="true"],
+#menuButton_create[selected="true"] {
+    background-color: #444b5d;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#homeHeroLabel {
+    color: #f1f3f5;
+}
+
+#homeBodyLabel {
+    color: #adb5bd;
+}
+
+#widgetsDescription,
+#createInfoLabel {
+    color: #f8f9fa;
+}
+
+QStackedWidget#stackedPages {
+    border: none;
+}
