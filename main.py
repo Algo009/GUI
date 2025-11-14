@@ -34,6 +34,8 @@ class MainWindow(QMainWindow):
         self.view.menu_changed.connect(self._on_menu_changed)
         self.view.save_requested.connect(self._on_save_requested)
         self.view.settings_requested.connect(self._on_settings_requested)
+        self.view.exit_requested.connect(self.close)
+        self.view.window_control_requested.connect(self._on_window_control_requested)
 
     def _on_menu_changed(self, menu: str) -> None:
         logging.info("Menu changed to %s", menu)
@@ -47,6 +49,18 @@ class MainWindow(QMainWindow):
     def _on_settings_requested(self) -> None:
         logging.info("Settings requested")
         self.view.show_message("Settings", "Settings dialog not implemented yet.")
+
+    def _on_window_control_requested(self, action: str) -> None:
+        logging.debug("Window control requested: %s", action)
+        if action == "minimize":
+            self.showMinimized()
+        elif action == "maximize":
+            if self.isMaximized():
+                self.showNormal()
+            else:
+                self.showMaximized()
+        elif action == "close":
+            self.close()
 
     # ------------------------------------------------------------------
     # Demo data helpers
