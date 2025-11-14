@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------------
+   Main window layout styling
+   ------------------------------------------------------------------ */
+#headerBar {
+    background-color: #21242f;
+    border-bottom: 1px solid #2c313c;
+    padding: 0px;
+}
+
+#titleLabel {
+    color: #f8f8f2;
+    letter-spacing: 0.5px;
+}
+
+#subtitleLabel {
+    color: #8be9fd;
+}
+
+#feedbackLabel {
+    color: #50fa7b;
+    font-weight: 600;
+}
+
+#statusLabel {
+    color: #a3acc4;
+}
+
+#leftMenu {
+    background-color: #161a22;
+    border-right: 1px solid #2c313c;
+}
+
+#leftMenu QPushButton {
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+#leftMenu QPushButton:hover {
+    background-color: rgba(189, 147, 249, 0.3);
+}
+
+#leftMenu QPushButton:pressed {
+    background-color: #6d6af2;
+    color: #ffffff;
+}
+
+#toggleMenuButton {
+    background-color: rgba(189, 147, 249, 0.15);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+#toggleMenuButton:hover {
+    background-color: rgba(189, 147, 249, 0.35);
+}
+
+#menuButton_home[selected="true"],
+#menuButton_widgets[selected="true"],
+#menuButton_create[selected="true"] {
+    background-color: rgba(68, 71, 90, 0.8);
+    border: 1px solid #6d6af2;
+    color: #ffffff;
+}
+
+#saveButton {
+    background-color: #21c167;
+    color: #0a0d14;
+    font-weight: 600;
+    text-align: center;
+}
+
+#saveButton:hover {
+    background-color: #1daf5c;
+}
+
+#saveButton:pressed {
+    background-color: #16924d;
+}
+
+#settingsButton {
+    background-color: rgba(33, 37, 43, 0.8);
+    border: 1px solid rgba(109, 106, 242, 0.2);
+    text-align: left;
+}
+
+#settingsButton:hover {
+    border-color: #6d6af2;
+}
+
+#contentArea {
+    background-color: #1f222d;
+}
+
+#mainContent {
+    background-color: #252836;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border: 1px solid #2c313c;
+}
+
+#loadingIndicator {
+    color: #bd93f9;
+    font-weight: 600;
+}
+
+#homeHeroLabel {
+    color: #f8f8f2;
+}
+
+#homeBodyLabel {
+    color: #b5bccd;
+}
+
+#widgetsDescription,
+#createInfoLabel {
+    color: #f8f8f2;
+    font-weight: 600;
+}
+
+QStackedWidget#stackedPages {
+    border: none;
+}
