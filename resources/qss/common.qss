@@ -1,0 +1,78 @@
+/* Common application styles */
+
+QWidget {
+    font-family: "Segoe UI";
+    font-size: 10pt;
+    color: #dddddd;
+    background-color: #282c34;
+}
+
+QToolTip {
+    color: #ffffff;
+    background-color: rgba(33, 37, 43, 180);
+    border: 1px solid #2c313a;
+    border-left: 2px solid #ff79c6;
+    padding: 4px 8px;
+}
+
+QPushButton {
+    background-color: transparent;
+    color: #d7dce2;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: #2f3440;
+}
+
+QPushButton:pressed {
+    background-color: #bd93f9;
+    color: #ffffff;
+}
+
+QLabel {
+    color: #d7dce2;
+}
+
+QTableWidget {
+    background-color: #1f2329;
+    gridline-color: #3a3f4b;
+    alternate-background-color: #242934;
+    border: 1px solid #303543;
+}
+
+QHeaderView::section {
+    background-color: #343a46;
+    color: #d7dce2;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #3d4453;
+}
+
+QTableWidget::item:selected {
+    background-color: #6272a4;
+    color: #ffffff;
+}
+
+QLineEdit, QTextEdit, QSpinBox, QComboBox {
+    background-color: #1c1f25;
+    border: 1px solid #343a46;
+    padding: 6px;
+    border-radius: 4px;
+    selection-background-color: #bd93f9;
+}
+
+QProgressBar {
+    background-color: #1c1f25;
+    border-radius: 4px;
+    border: 1px solid #343a46;
+    text-visible: true;
+}
+
+QProgressBar::chunk {
+    background-color: #50fa7b;
+    border-radius: 4px;
+}
